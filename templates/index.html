@@ -1,8 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <form action="{{ url_for('login') }}" method=get>
-            <input type="submit" value="Analyse">
-        </form>
-    </body>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 300px;
+            background: #000;
+        }
+
+        input[type=text] {
+            widows: 100px;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #333;
+            background:#fff;
+            margin-bottom: 50px;
+            box-shadow: 0 3px 20px 0 #0000003b;
+            transition-duration: .4s;
+            margin-top: 3;
+
+        }
+
+        input[type=submit] {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #333;
+            background: #fff;
+            margin-bottom: 50px;
+            box-shadow: 0 3px 20px 0 #0000003b;
+            transition-duration: .4s;
+            margin-top: 3;
+        }
+
+        input[type=submit]:hover {
+            cursor: pointer;
+            background: black;
+            color: white;
+            transform: scale(1.5);
+        }
+
+        button {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #333;
+            background: #fff;
+            margin-bottom: 50px;
+            box-shadow: 0 3px 20px 0 #0000003b;
+            transition-duration: .4s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <br>
+    <button class="button"> Do you want mathematically recommended problems to improve your codeforces rating?
+    </button>
+
+    <form action="{{ url_for('login') }}" method=get>
+        <input type="submit" value="Yes I do!">
+    </form>
+</body>
+
 </html>
