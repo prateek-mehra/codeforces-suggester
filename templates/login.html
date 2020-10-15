@@ -1,0 +1,100 @@
+<header>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+  <style>
+    /* Style the body */
+    body {
+      font-family: 'Open Sans';
+      margin: 0;
+      background: black;
+    }
+
+    /* Header/Logo Title */
+    .header {
+      padding: 60px;
+      text-align: center;
+      background-image: linear-gradient(#f7e4e4,black);
+      color:black;
+      font-size: 30px;
+      border-bottom-left-radius: 40% 20%;
+      border-bottom-right-radius: 40% 20%;
+      font-family: 'Ultra',serif;
+      text-shadow: 0 2px white, 0 3px #777;
+  }
+  .container
+  {
+    background: black;
+  }
+
+    /* Page Content */
+    .content {
+      padding: 20px;
+      text-align: center;
+      color: white;
+      
+      font-size: 20px;
+      font-family: 'Open Sans', sans-serif;
+      height: 500;
+      line-height: 4;
+
+    }
+
+    input[type=text] {
+      width: 800;
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      color: #333;
+      background: #fff;
+      margin-bottom: 50px;
+      box-shadow: 0 3px 20px 0 #0000003b;
+      transition-duration: .4s;
+      margin-top: 3;
+
+    }
+
+    input[type=submit] {
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      color: #333;
+      background: #fff;
+      margin-bottom: 50px;
+      box-shadow: 0 3px 20px 0 #0000003b;
+      transition-duration: .4s;
+      margin-top: 3;
+    }
+
+    input[type=submit]:hover {
+      cursor: pointer;
+      background: black;
+      color:white;
+      transform:scale(1.5);
+    }
+  </style>
+
+</header>
+<div class="container">
+<div class="header">
+  <h2>Welcome to Codeforces Suggester!</h2>
+</div>
+</div>
+
+<body>
+  <div class="content">
+    <form action="{{ url_for('login') }}" method=post>
+      <dl>
+        
+          <br>
+        <dd><input type=text name=username placeholder="Please enter your username here and hit Analyse!">
+          <br>
+
+        <dd><input type=submit value=Analyse>
+      </dl>
+    </form>
+  </div>
+</body>

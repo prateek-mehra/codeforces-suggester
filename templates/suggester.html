@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codeforces Suggester </title>
+
+    <style>
+        /* Style the body */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+        }
+
+        /* Header/Logo Title */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background-image: linear-gradient(#f7e4e4,black);
+            color: white;
+            font-size: 30px;
+            border-bottom-left-radius: 40% 20%;
+            border-bottom-right-radius: 40% 20%;
+        }
+        .container
+        {
+            background: black;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color:white;
+        }
+        h2 {
+           font-family: monospace;
+           color: greenyellow;
+        }
+
+        /* Page Content */
+        .content {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background: black;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            transition-duration: .4s;
+
+        }
+
+        
+
+        button {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: #333;
+            background: #fff;
+            margin-bottom: 50px;
+            box-shadow: 0 3px 20px 0 #0000003b;
+            transition-duration: .4s;
+        }
+        
+          p1{
+              margin-top: 2;
+              margin-bottom: 2;
+          }
+          p2{
+            margin-top: 2;
+            margin-bottom: 2;
+        }
+          .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+          }
+          .button2:hover {
+            background-color:red;
+            color: white;
+          }
+
+        button:hover {
+            cursor: pointer;
+            background: black;
+            color: white;
+            transform:scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> Thanks for using Codeforces Suggester</h1>
+            <h2>{{Myname}}!</h2>
+            
+        </div>
+    </div>
+    <div class="content"><br>
+
+        <p1 style="text-align:center;font-family:monospace; color:greenyellow" ;">Your strong topics are:</p1>
+        <br><br>
+        {% for item in topics %}
+            <button onclick="window.open('{{stronglinks[loop.index0]}}','_blank')" class="button button1"; type="button">{{item}}</button>
+        {% endfor %}
+        <br>
+        
+
+        <p2 style="text-align:center;font-family:monospace; color:greenyellow" ;">Topics which you should improve are:
+        </p2>
+        <br><br>
+
+        {% for item in improve %}
+            <button  onclick="window.open('{{weaklinks[loop.index0]}}','_blank')" class="button button2";type="button">{{item}}</button>
+        {% endfor %}
+        <br><br>
+
+        <p2 style="text-align:center;font-family:monospace; color:greenyellow" ;">25 Practice problems curated for you are:
+        </p2>
+        <br><br>
+        {% for item in links %}
+        <button onclick=" window.open('{{item}}','_blank')" type="button">
+            Problem {{loop.index}}</button>
+        {% endfor %}
+
+
+    </div>
+
+</body>
+
+</html>
