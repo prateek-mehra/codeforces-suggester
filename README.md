@@ -4,4 +4,6 @@ This is a full stack web-app built using Python, flask and jinja template engine
 
 Codeforces APIs are also used to track statistics related to previous submissions of a user in order to mathematically calculate his strong and weak topics. The web-app also recommends 25 problems based on the analysis of the user's submissions and provides direct links for all the recommendations through which the user can directly start practicing and improve his rating eventually.
 
+App live at: https://codeforces-suggester.herokuapp.com/
+
 [DEMO VIDEO](https://www.linkedin.com/posts/1prateekmehra1_codeforces-python-flask-activity-6685110276964065280-zjqb)
