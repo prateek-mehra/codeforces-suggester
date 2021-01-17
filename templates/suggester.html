@@ -13,10 +13,53 @@
     <title>Codeforces Suggester </title>
 
     <style>
+        
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
         /* Style the body */
         body {
             font-family: 'Orbitron', sans-serif;
             margin: 0;
+        }
+
+
+        #footer,#footer.zoom {
+            font-weight: bolder;
+            height: 50px;
+            width: 20%;
+            position: fixed;
+            bottom: 0;
+            left: 80%;
+            background: rgba(255, 255, 255,0.7);
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            text-align: center;
+            z-index: 99;
+            padding-top: 20px;
+        }
+
+
+
+        #footer:hover {
+            cursor: pointer;
+            transition-duration: 400ms;
+            height: 60px;
+        }
+
+        #inner_footer {
+            z-index: 100;
+            font-weight: bolder;
+            height: 20px;
+            width: 2%;
+            position: fixed;
+            bottom: 9px;
+            left: 89%;
+            text-align: center;
+            border-top-left-radius: 50px;
+            border-top-right-radius:50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius:50px;
+            margin-top: 20px;
+           
         }
 
         /* Header/Logo Title */
@@ -53,6 +96,18 @@
             font-family: 'Open Sans', sans-serif;
             transition-duration: .4s;
 
+        }
+
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover,
+        a:visited,
+        a:active {
+            text-decoration: underline;
+            color: black;
         }
 
         
@@ -132,6 +187,17 @@
 
 
     </div>
+
+    <div id="footer">
+            <div id="inner_footer">
+
+                <img src="{{url_for('static', filename='github-brands.svg')}} " width="19" height="19" />
+
+                </a>
+            </div>
+            <a href="https://github.com/prateek-mehra" target="_blank">View on Github
+
+        </div>
 
 </body>
 
