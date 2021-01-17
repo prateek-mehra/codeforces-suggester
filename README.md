@@ -1,6 +1,6 @@
 # codeforces-suggester
 
-This is a full stack web-app built using Pyhton, flask and jinja template engine as backend and HTML, CSS as frontend.
+This is a full stack web-app built using Python, flask and jinja template engine as backend and HTML, CSS as frontend.
 
 Codeforces APIs are also used to track statistics related to previous submissions of a user in order to mathematically calculate his strong and weak topics. The web-app also recommends 25 problems based on the analysis of the user's submissions and provides direct links for all the recommendations through which the user can directly start practicing and improve his rating eventually.
 
