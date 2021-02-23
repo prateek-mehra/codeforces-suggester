@@ -8,7 +8,7 @@
 
 * Strong topics
 * Topics that a user can improve in
-* 25 problems recommended on his past submisisions
+* 25 problems recommended for him based on his past submisisions
 
 
 App live at: https://codeforces-suggester.herokuapp.com/
